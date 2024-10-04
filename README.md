@@ -22,6 +22,6 @@ Projekt ma na celu ułatwienie analizy danych oraz umożliwienie użytkownikom d
 1. **Klonowanie repozytorium**:
    ```bash
    git clone https://github.com/Pablo1644/TabelaZCisnieniem.git
-
+   ```
 
    Ten projekt jest objęty licencją MIT 
