@@ -2,8 +2,8 @@
 
 ## Opis
 
-Tabela z Ciśnieniem to aplikacja, która pozwala na łatwe rejestrowanie i śledzenie pomiarów ciśnienia w określonych dniach. 
-Projekt ma na celu ułatwienie analizy danych oraz umożliwienie użytkownikom dostępu do historycznych pomiarów ciśnienia atmosferycznego w formie tabeli.
+Tabela z Ciśnieniem to aplikacja, która pozwala na śledzenie pomiarów ciśnienia atmosferycznego w określonych dniach. 
+Projekt ma na celu przyspieszenie/zautomatyzowanie procesu tworzenia tabeli z ciśnieniem na dany miesiąc.
 
 ## Funkcjonalności
 
