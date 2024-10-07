@@ -3,7 +3,6 @@
 from docx import Document
 from docx.shared import Cm, Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from spec_days import add_special_days
 import calendar_utils
 
 
@@ -37,7 +36,7 @@ style.font.size = Pt(11)
 ACTUAL_YEAR = int(input("podaj rok: "))
 month = input("Podaj miesiąc np. Styczeń: ")
 
-spec_days = add_special_days()
+spec_days = calendar_utils.add_special_days()
 
 month_days = calendar_utils.month_days
 
