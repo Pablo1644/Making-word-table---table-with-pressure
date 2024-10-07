@@ -20,6 +20,19 @@ month_days = {
     'Grudzień': 31
 }
 
+def add_special_days():
+    special_days = []
+    while True:
+        choice = input("Dodaj dzień specjalny T/N: ").upper()
+        if choice == 'N':
+            break
+        elif choice == 'T':
+            day = int(input("Dzień specjalny (numer): "))
+            special_days.append(day)
+        else:
+            print("Podaj prawidłową opcje:T/N")
+    return special_days
+
 
 def first_day_of_the_month(mon, year):
     """
