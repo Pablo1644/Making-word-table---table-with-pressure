@@ -11,6 +11,8 @@ import calendar_utils
 
 width = 16.96
 height = 0.7
+ACTUAL_YEAR = 0
+month = 1
 
 def center_table_text(table):
     for row in table.rows:
@@ -33,12 +35,25 @@ style.font.name = 'Calibri'
 style.font.size = Pt(11)
 
 # Pobieranie danych od użytkownika
-ACTUAL_YEAR = int(input("podaj rok: "))
-month = input("Podaj miesiąc np. Styczeń: ")
+month_days = calendar_utils.month_days
+
+while True:
+    try:
+        ACTUAL_YEAR = int(input("Podaj rok (1951-2050):  "))
+        if ACTUAL_YEAR>2050 or ACTUAL_YEAR<1951:
+            raise Exception("Rok spoza zakresu. Jeszcze raz podaj dane!")
+        month = input("Podaj miesiąc np. Styczeń: ")
+        if month not in month_days:
+            raise Exception("Nie ma takiego miesiąca! Jeszcze raz podaj dane! ")
+        break  # Gdy dane są poprawne, wyjdź z pętli
+    except ValueError:
+        print("Błędnie podany rok! Spróbuj raz jeszcze.")
+    except Exception as e:
+        print("Błąd! Podaj dane jescze raz!")  # Wyświetla komunikat, np. "Nie ma takiego miesiąca!"
 
 spec_days = calendar_utils.add_special_days()
 
-month_days = calendar_utils.month_days
+
 
 if month == 'Luty' and ACTUAL_YEAR % 4 == 0 and (ACTUAL_YEAR % 100 != 0 or ACTUAL_YEAR % 400 == 0):
     month_days['Luty'] = 29
