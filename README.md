@@ -10,6 +10,10 @@ Pressure Table is an application designed to track atmospheric pressure measurem
 - **Calendar View**: View data in a table format, displaying days of the month along with their corresponding pressure readings.
 - **Day Highlighting**: Automatically highlight special days (e.g., holidays) and weekends.
 
+
+## Files
+- **main.py**: Main file for initializing app.
+
 ## Technologies
 
 - Python
