@@ -15,6 +15,7 @@ Pressure Table is an application designed to track atmospheric pressure measurem
 - **main.py**: Main file for initializing app
 - **calendar_utils.py**: Functionality of app
 - **Luty2024_cisnienie.docx** - example created file
+- **test_calendar_utils.py** - unit tests checking the functionality - proper colour of special days + proper calculation of day 
 ## Technologies
 
 - Python
